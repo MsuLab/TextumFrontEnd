@@ -6,14 +6,24 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
-        
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="vendor/bootstrap-wysihtml5/dist/bootstrap-wysihtml5-0.0.3.css"/>
+		  <link rel="stylesheet" type="text/css" href="vendor/bootstrap-wysihtml5/dist/bootstrap-wysihtml5-0.0.3.css"/>
 
+		  <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+		  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		  </script>
+		  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		  <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		  <script type="text/javascript" id="sourcecode">
+			  $(function()
+			  {
+				  $('.scroll-pane').jScrollPane();
+			  });
+		  </script>
+		  
         <link rel="stylesheet" href="css/textum.css">
         <link rel="stylesheet" href="css/main.css">
         <!--[if lt IE 9]>
@@ -77,11 +87,11 @@
               <div class="jumbotron">
                 <h3>Рукопись</h3>
                 <hr>
-                <div class="photoGallery">
+                <div class="photoGallery container">
                     <!-- WRITE IT HERE -->
                   <div class="container">
+                  <!-- Images should be deleted, they are just examples -->
                   <div class="row photoRow">
-                  	<!-- Images should be deleted, they are just examples -->
                   	<div class="col-md-5 photo">
                   		<p class="pageNumber">600</p>
                   		<img src="img/3rd_Doctor.jpg" width="100%"></img>
@@ -90,14 +100,48 @@
                   		<p class="pageNumber">6</p>
                   		<img src="img/4th_Doctor.jpg" width="100%"></img>
                   	</div>
+                  </div>
+                  <div class="row photoRow">
                   	<div class="col-md-5 photo">
                   		<img src="img/7th_Doctor.jpg" width="100%"></img>
                   	</div>
-                  	<div class="col-md-5 photo"><img src="img/11th_Doctor.jpg" width="100%"></img></div>
+                  	<div class="col-md-5 photo">
+                  		<img src="img/ws1.png" width="100%"></img>
+                  	</div>
                   </div>
+                  <div class="row photoRow">
+                  	<div class="col-md-5 photo">
+                  		<p class="pageNumber">600</p>
+                  		<img src="img/3rd_Doctor.jpg" width="100%"></img>
+                  	</div>
+                  	<div class="col-md-5 photo">
+                  		<p class="pageNumber">600</p>
+                  		<img src="img/3rd_Doctor.jpg" width="100%"></img>
+                  	</div>
+                  </div>
+                  <div class="row photoRow">
+                  	<div class="col-md-5 photo">
+                  		<p class="pageNumber">600</p>
+                  		<img src="img/3rd_Doctor.jpg" width="100%"></img>
+                  	</div>
+                  	<div class="col-md-5 photo">
+                  		<p class="pageNumber">600</p>
+                  		<img src="img/3rd_Doctor.jpg" width="100%"></img>
+                  	</div>
+                  </div>
+                  <div class="row photoRow">
+                  	<div class="col-md-5 photo">
+                  		<p class="pageNumber">600</p>
+                  		<img src="img/3rd_Doctor.jpg" width="100%"></img>
+                  	</div>
+							<div class="col-md-5 photo">
+                  		<p class="pageNumber">600</p>
+                  		<img src="img/3rd_Doctor.jpg" width="100%"></img>
+                  	</div>
                   </div>
                 </div>
-                <div class="text-center">
+              </div>
+              <div class="text-center">
               	 <ul class="pagination pagination-sm">
                 	<li><a href="#"><span class="glyphicon glyphicon-arrow-left"></span></a></li>
                 	<li><a href="#">1</a></li>
@@ -105,10 +149,10 @@
                 	<li><a href="#">...</a></li>
                 	<li><a href="#"><span class="glyphicon glyphicon-arrow-right"></span></a></li>
                 </ul>
-                </div>
               </div>
             </div>
           </div>
+        </div>
         
         <div class="container">
           <hr>
