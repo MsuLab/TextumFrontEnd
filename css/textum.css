@@ -11,10 +11,10 @@
 }
 
 .photoGallery {
-  width: 88%;
-  height: 592px; /* 635px */
+  width: auto;
+  height: 588px; /* 635px 592px */
   border: 1px solid rgb(0, 0, 0);
-	overflow: auto;
+  overflow: auto;
 }
 
 .photoRow {
@@ -46,6 +46,15 @@
 	right: 0;
 	min-width: 10%;
 	text-align: center;
+}
+
+.photoGalleryMenu {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.photoGalleryMenuElement {
+	margin: 2px;
 }
 
 .mainView {
