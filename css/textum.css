@@ -1,60 +1,8 @@
-#some-textarea {
-  width: 100%;
-  height: 580px;
-}
+/* Common */
 
-.scroll-pane
-{
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-}
-
-.photoGallery {
-  width: 100%;
-  height: 592px; /* 635px 592px */
-  border: 1px solid rgb(0, 0, 0);
-  overflow: auto;
-}
-
-.photoRow {
-	padding-bottom: 10px;
-	padding-top: 10px;
-	margin-left: 10px;
-}
-
-.photo {
-	background-color: white;
-	border: 1px solid black;
-	max-height: 148px;
- 	margin-right: 20px;
- 	margin-bottom: 10px;
- 	margin-top: 10px;
- 	height: auto;
- 	overflow: auto;
-}
-
-.photo:hover {
-	border: 1px solid blue;
-}
-
-.pageNumber {
-	background-color: white;
-	border: 1px solid black;
-	position: absolute;
-	top: 0;
-	right: 0;
-	min-width: 10%;
-	text-align: center;
-}
-
-.photoGalleryMenu {
-	list-style-type: none;
-	margin-left: 0;
-}
-
-.photoGalleryMenuElement {
-	margin: 2px;
+/* Disable elastic effect */
+body {
+  overflow: hidden;
 }
 
 .mainView {
@@ -77,14 +25,32 @@
   border-radius:8px;
 } 
 
+
+
+
+/* Text View */
+#some-textarea {
+  width: 100%;
+  height: 580px;
+}
+
+/* Photo Gallery */
+.photoGallery {
+  width: 100%;
+  height: 592px; 
+  border: 1px solid rgb(0, 0, 0);
+  overflow: auto;
+}
 .jumbotron {
   height: 700px;
   padding: 10px 15px 15px 15px;
   
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  margin-bottom: 0px
+  margin-bottom: 0px;
+  font-size: 16px;
 }
+
 
 .jumbotron h3,hr {
   margin-top: 0px;
@@ -93,4 +59,83 @@
 
 .jumbotron hr {
   border-top: 1px solid #000
+}
+
+.photoGallery {
+  /*position: relative;*/
+  clear: both;
+}
+
+.photoGrid{
+    width: 93%;
+    position: relative;    
+
+    margin: 10px 0px 0px 10px;
+    padding: 0px;
+
+    /* Fixes height problem */
+    float: left;
+    clear: left;
+}
+
+.photoGrid li {
+    display: inline;
+    width: 195px;
+    height: 140px;
+    float: left;
+    border: 1px solid #000;
+    margin: 5px;
+    list-style: none;
+    position: relative;
+    text-align: center;
+
+}
+
+.photoGrid li>span {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    text-align: center;
+    line-height: 17px;
+    font-size: 17px;
+}
+
+.photoGrid li>img {
+    max-width:100%;max-height:100%;
+
+   /* height:138px;
+    width:auto;
+    max-width:195px;*/
+}
+
+.photoGrid li:hover {
+    border: 3px solid #000;
+}
+
+.galleryMenu {
+    top: 58px;
+    right: 30px;
+    position: absolute;
+
+}
+.galleryMenu ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.galleryMenu li{
+  list-style: none;
+}
+
+.pages {
+    left: 50%;
+    top: 50%;
+    text-align: center; 
+}
+
+.pagination{
+    margin-top: 10px;
+    
 }
