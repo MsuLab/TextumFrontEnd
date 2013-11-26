@@ -1,4 +1,6 @@
 /* Common */
+/* Styles specific to this particular page */
+
 
 /* Disable elastic effect */
 body {
@@ -35,12 +37,7 @@ body {
 }
 
 /* Photo Gallery */
-.photoGallery {
-  width: 100%;
-  height: 592px; 
-  border: 1px solid rgb(0, 0, 0);
-  overflow: auto;
-}
+
 .jumbotron {
   height: 700px;
   padding: 10px 15px 15px 15px;
@@ -61,11 +58,23 @@ body {
   border-top: 1px solid #000
 }
 
+
 .photoGallery {
-  /*position: relative;*/
+  width: 100%;
+  height: 592px; 
+  border: 1px solid rgb(0, 0, 0);
+  overflow: auto;
   clear: both;
 }
 
+/* Full */
+
+.fullImage {
+    max-width:100%;
+
+}
+
+/* Grid */
 .photoGrid{
     width: 93%;
     position: relative;    
@@ -118,11 +127,13 @@ body {
     top: 58px;
     right: 30px;
     position: absolute;
+    z-index: 10;
 
 }
 .galleryMenu ul {
     padding: 0px;
     margin: 0px;
+
 }
 
 .galleryMenu li{
