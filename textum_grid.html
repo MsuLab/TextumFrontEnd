@@ -7,21 +7,21 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<!-- bootstrap3-wysihtml5-bower -->
+	<link rel="stylesheet" href="bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css">
+	<!-- jscrollpane -->
+	<link rel="stylesheet" href="bower_components/jscrollpane/style/jquery.jscrollpane.css">
 
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap-wysihtml5/dist/bootstrap-wysihtml5-0.0.3.css"/>
-
+	<!-- textum -->
 	<link rel="stylesheet" href="css/textum.css">
 	<link rel="stylesheet" href="css/main.css">
+
 	<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
 	<![endif]-->
-
-	<!-- styles needed by jScrollPane -->
-	<link type="text/css" href="vendor/jScrollPane-2.0.14/style/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-
 </head>
 
 <body>
@@ -163,28 +163,26 @@
 			<p>&copy; Kopin Boris 2013</p>
 		</footer>
 	</div>
-	<script type="text/javascript" src="vendor/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.js"><\/script>')</script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script type="text/javascript" src="vendor/bootstrap-wysihtml5/dist/bootstrap-wysihtml5-0.0.3.js"></script>
-	
 
-	<!-- the mousewheel plugin - optional to provide mousewheel support -->
-	<script type="text/javascript" src="vendor/jScrollPane-2.0.14/script/jquery.mousewheel.js"></script>
+	<!-- jquery -->
+	<script src="bower_components/jquery/jquery.js"></script>
+	<!-- bootstrap -->
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<!-- underscore -->
+	<script src="bower_components/underscore/underscore-min.js"></script>
+	<!-- handlebars -->
+	<script src="bower_components/handlebars/handlebars.js"></script>
+	<!-- wysihtml5 -->
+	<script src="bower_components/wysihtml5/dist/wysihtml5-0.3.0.min.js"></script>
+	<!-- bootstrap3-wysihtml5-bower -->
+	<script src="bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js"></script>
+	<!-- jquery-mousewheel -->
+	<script src="bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+	<!-- jscrollpane -->
+	<script src="bower_components/jscrollpane/script/jquery.jscrollpane.js"></script>
 
-	<!-- the jScrollPane script -->
-	<script type="text/javascript" src="vendor/jScrollPane-2.0.14/script/jquery.jscrollpane.min.js"></script>
-
-
-	<script type="text/javascript">
-			$('#some-textarea').wysihtml5();
-			$(function()
-			{
-				// Uncomment this for scroll enabling
-				// $('.photoGallery').jScrollPane();
-			});
-	</script>
+	<!-- main -->
+	<script src="js/main.js"></script>
 
 </body>
 </html>
