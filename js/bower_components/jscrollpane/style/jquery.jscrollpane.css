@@ -4,6 +4,7 @@
  * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
  * may not operate correctly without them.
  */
+/*
 
 .jspContainer
 {
@@ -21,9 +22,10 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 16px;
+	width: 2px;
 	height: 100%;
 	background: red;
+	margin-right: 3px;
 }
 
 .jspHorizontalBar
@@ -57,15 +59,19 @@
 {
 	background: #dde;
 	position: relative;
+	/*padding-left: 2px;*/
+	/*padding-right: 2px;*/
+
 }
 
 .jspDrag
 {
-	background: #bbd;
+	background: #36bfbe;
 	position: relative;
 	top: 0;
 	left: 0;
 	cursor: pointer;
+	margin: 0 -3px;
 }
 
 .jspHorizontalBar .jspTrack,
@@ -118,3 +124,4 @@
 {
 	margin: 0 -3px 0 0;
 }
+
