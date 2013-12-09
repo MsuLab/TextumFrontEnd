@@ -21,9 +21,10 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 16px;
+	width: 2px;
 	height: 100%;
 	background: red;
+	margin-right: 3px;
 }
 
 .jspHorizontalBar
@@ -61,7 +62,8 @@
 
 .jspDrag
 {
-	background: #bbd;
+	/*background: #bbd;*/
+	background: #36bfbe;
 	position: relative;
 	top: 0;
 	left: 0;
